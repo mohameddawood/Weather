@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+       app:cardBackgroundColor="#434545"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+
+            android:layout_height="wrap_content">
+            <ImageView
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/ivPicItem"
+                android:layout_width="60dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                tools:text="hhh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                tools:text="hhh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivPicItem"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="hhh" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
